@@ -1,0 +1,25 @@
+* K01
+
+** Kubernetes
+
+*** ArgoCD
+
+Deploy ArgoCD
+
+#+begin_src shell
+kubectl apply -k manifests/argocd
+#+end_src
+
+Reset password
+
+#+begin_src shell
+argocd admin initial-password -n argocd
+argocd login localhost:8080
+argocd account update-password
+#+end_src
+
+Deploy applications
+
+#+begin_src shell
+kubectl apply -f manifests/applications.yaml
+#+end_src
