@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: vmoperator
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/satoruh/k01.git
+    targetRevision: master
+    path: charts/vmoperator
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: vmoperator
+  syncPolicy:
+    automated:
+      prune: true
+    syncOptions:
+      - CreateNamespace=true

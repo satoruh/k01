@@ -1,0 +1,6 @@
+name: vmoperator
+version: 0.1.0
+dependencies:
+- name: victoria-metrics-operator
+  version: 0.39.1
+  repository: https://victoriametrics.github.io/helm-charts
