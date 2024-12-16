@@ -1,0 +1,11 @@
+resources:
+- namespace.yaml
+- vmcluster.yaml
+- vmagent.yaml
+- node-exporter.yaml
+- kube-state-metrics-vmpodscrape.yaml
+- node-exporter-vmnodescrape.yaml
+- grafana.yaml
+- vmselect-grafanadatasource.yaml
+- victoriametrics-cluster-grafanadashboard.yaml
+- victoriametrics-vmagent-grafanadashboard.yaml
