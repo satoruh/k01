@@ -9,3 +9,15 @@ resources:
 
 patches:
 - path: overlays/argocd-cm.yaml
+- target:
+    version: v1
+    kind: Service
+    name: argocd-server
+  patch: |-
+    - op: add
+      path: "/metadata/annotations"
+      value:
+        external-dns.alpha.kubernetes.io/hostname: argocd.k01.satoruh.org
+    - op: replace
+      path: /spec/type
+      value: LoadBalancer
