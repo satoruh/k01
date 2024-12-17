@@ -9,3 +9,9 @@ spec:
     security:
       admin_user: root
       admin_password: secret
+  service:
+    metadata:
+      annotations:
+        external-dns.alpha.kubernetes.io/hostname: grafana.k01.satoruh.org
+    spec:
+      type: LoadBalancer
