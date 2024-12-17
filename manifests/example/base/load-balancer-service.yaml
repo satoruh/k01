@@ -5,6 +5,8 @@ metadata:
   namespace: sandbox
   labels:
     app.kubernetes.io/name: example
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: nginx.example.satoruh.org
 spec:
   selector:
     app: nginx
