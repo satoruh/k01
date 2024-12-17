@@ -1,0 +1,11 @@
+* external-dns
+
+ref: https://github.com/kubernetes-sigs/external-dns/blob/v0.15.0/docs/tutorials/cloudflare.md
+
+** Prerequisite
+
+CloudflareのAPI Tokenを手動で作成する。
+
+#+begin_src shell
+  kubectl create secret generic cloudflare-api-token --from-literal=apiToken=${CF_API_TOKEN} -n external-dns
+#+end_src
