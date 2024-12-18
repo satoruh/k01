@@ -9,6 +9,7 @@ resources:
 
 patches:
 - path: overlays/argocd-cm.yaml
+- path: overlays/argocd-rbac-cm.yaml
 - target:
     version: v1
     kind: Service
