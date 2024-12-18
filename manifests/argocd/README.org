@@ -1,0 +1,16 @@
+* ArgoCD
+
+** Auth0
+
+Auth0を利用してユーザを認証します。
+
+`argocd-oidc` に Auth0 ApplicationのClient Secretを保存します。
+
+#+begin_src example
+data:
+  oidc.auth0.clientID: <base64-encoded-clientID>
+  oidc.auth0.clientSecret: <base64-encoded-clientSecret>
+
+#+end_src
+
+ref: https://argo-cd.readthedocs.io/en/stable/operator-manual/user-management/#sensitive-data-and-sso-client-secrets
