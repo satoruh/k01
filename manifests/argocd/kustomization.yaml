@@ -18,3 +18,11 @@ patches:
     - op: replace
       path: /spec/type
       value: LoadBalancer
+- target:
+    version: v1
+    kind: Deployment
+    name: argocd-server
+  patch: |-
+    - op: add
+      path: /spec/template/spec/containers/0/args/-
+      value: --insecure
