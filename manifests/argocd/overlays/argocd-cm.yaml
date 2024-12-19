@@ -11,7 +11,7 @@ data:
       type: git
       url: https://github.com/satoruh/k01
   application.instanceLabelKey: argocd.argoproj.io/instance
-  url: https://argocd.k01.satoruh.org
+  url: https://argocd-k01.satoruh.org
   oidc.config: |
     name: Auth0
     issuer: https://dev-bikatfwumhltuxb2.us.auth0.com/
