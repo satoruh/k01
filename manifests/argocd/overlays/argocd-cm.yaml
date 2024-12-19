@@ -22,3 +22,4 @@ data:
     - profile
     - email
     - 'http://your.domain/groups'
+  admin.enabled: "false"
