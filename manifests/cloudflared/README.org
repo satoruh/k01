@@ -1,0 +1,17 @@
+* Cloudflared
+
+** Tunnel
+
+`cloudflared-secret` に Tunnel Tokenを保存します。
+
+fetch the token
+
+#+begin_src shell
+cloudflared tunnel list # list tunnels
+cloudflared tunnel token <Tunnel ID> # fetch the token for a tunnel
+#+end_src shell
+
+#+begin_src example
+data:
+  tunnel-token: <Tunnel Token>
+#+end_src
