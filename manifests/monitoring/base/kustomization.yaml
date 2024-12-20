@@ -4,3 +4,4 @@ resources:
 - vmagent.yaml
 - node-exporter.yaml
 - node-exporter-vmnodescrape.yaml
+- vmoperator-vmservicescrape.yaml
