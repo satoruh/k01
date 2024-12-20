@@ -5,3 +5,4 @@ resources:
 - node-exporter.yaml
 - node-exporter-vmnodescrape.yaml
 - vmoperator-vmservicescrape.yaml
+- kube-state-metrics-vmservicescrape.yaml
